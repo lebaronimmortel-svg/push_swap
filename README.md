@@ -1,38 +1,37 @@
-﻿*This project has been created as part of the 42 curriculum by alexfuen*
+﻿*This project has been created as part of the 42 curriculum by alexfuen.*
 
-# Description
+## Description
+push_swap is an algorithmic project designed to sort a random set of integers using two stacks (`a` and `b`) and a strictly limited set of stack manipulation instructions. The objective is to produce the smallest possible sequence of operations to sort stack `a` in ascending order, minimizing time complexity and move count.
 
-The Push swap project is a simple yet highly structured algorithmic challenge: you
-need to sort data.
-You have at your disposal a set of integer values, 2 stacks, and a set of instructions to manipulate both stacks.
-The goal is to write a C program called push_swap that calculates and displays the
-shortest sequence of Push_swap instructions needed to sort the given integers.
+**push_swap** incorporates the following main features:
+- A sorting engine `push_swap` that parses and validates input integers from CLI arguments.
+- Supports both multiple arguments (`./push_swap 2 1 3 6 5 8`) and quoted formatted strings (`./push_swap "2 1 3 6 5 8"`).
+- Outputs the sequence of operations separated by newlines to standard output.
 
-# Instructions
+Memory is properly managed throughout; all allocated nodes, arrays, and parsed strings are freed on exit without memory leaks.
 
-To compile this program, open a terminal in the push_swap folder, then type make.
-To execute the program, type ./push_swap followed by one or several strings containing the integer values we want to sort. 
-Example 1 : ./push_swap "15 87 36 95 21 12"
-Example 2 : ./push_swap 15 87 36 95 21 12
+## Instructions
+To compile and run the project, the standard `Makefile` rules apply:
+- Run `make` or `make all` to compile the mandatory executable `push_swap`.
+- Run `make bonus` to compile the bonus checker executable `checker`.
+- Other available `Makefile` rules include `clean`, `fclean`, and `re`.
 
-# Resources
+### Execution
 
-https://github.com/AdrianWR/push_swap
+Run `push_swap` by passing integer values either as separate parameters or within a quoted string:
+```bash
+./push_swap 15 87 36 95 21 12
+./push_swap "15 87 36 95 21 12"
+```
+To count the total number of operations generated:
+```bash
+./push_swap 15 87 36 95 21 12 | wc -l
+```
 
-https://github.com/duarte3333/Push_Swap
+## Resources
 
-https://pure-forest.medium.com/push-swap-turk-algorithm-explained-in-6-steps-4c6650a458c0
-
-https://medium.com/@ayogun/push-swap-c1f5d2d41e97
-
-https://m4nnb3ll.medium.com/my-journey-to-find-a-good-sorting-algorithm-for-the-push-swap-42-project-4a18bc38b474
-
-https://www.scribd.com/document/636999723/Untitled
-
-https://stackoverflow.com/questions/75100698/push-swap-what-is-the-most-efficient-way-to-sort-given-values-using-a-limited-s
-
-I also used ChatGPT as an improved Internet navigator to find some technical information such as :
-- how to use the exit function
-- how can I decrease the number of operations
-- what is the most efficient algorithm 
-- etc...
+Resources for this project were:
+ - https://pure-forest.medium.com/push-swap-turk-algorithm-explained-in-6-steps-4c6650a458c0 — Detailed explanation of the Turk mechanical algorithm
+ - https://medium.com/@ayogun/push-swap-c1f5d2d41e97 — Overview of stack manipulation and complexity optimizations
+ - https://m4nnb3ll.medium.com/my-journey-to-find-a-good-sorting-algorithm-for-the-push-swap-42-project-4a18bc38b474 — Comparison of various sorting approaches for push_swap
+ - https://stackoverflow.com/questions/75100698/push-swap-what-is-the-most-efficient-way-to-sort-given-values-using-a-limited-s — Algorithmic discussions on instruction optimization

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   find_next_close.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alexfuen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: alexfuen <alexfuen@student.42angouleme.fr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 15:37:19 by alexfuen          #+#    #+#             */
 /*   Updated: 2026/01/18 15:37:21 by alexfuen         ###   ########.fr       */
